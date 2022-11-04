@@ -8,22 +8,28 @@
 import UIKit
 
 class TasbihVC: UIViewController {
-
+    
+    @IBOutlet weak var tasbihCountLbl: UILabel!
+    var counter = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapAction)))
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func tapAction(_ gesture: UITapGestureRecognizer) {
+        counter += 1
+            tasbihCountLbl.text = String(counter)
     }
-    */
+    
+    @IBAction func newCountButton(_ sender: UIButton) {
 
+        if (counter >= 0){
+            counter = 0
+            tasbihCountLbl.text = String(0)
+        }
+    }
+    
+    
+    
 }

@@ -65,7 +65,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rajshahi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCX-QP-H5J">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rajshahi" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCX-QP-H5J" userLabel="cityLocationLbl">
                                         <rect key="frame" x="0.0" y="46" width="98.5" height="20"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -160,7 +160,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A70-TH-TSR" userLabel="NamazTimeView">
-                                <rect key="frame" x="0.0" y="541" width="414" height="84"/>
+                                <rect key="frame" x="0.0" y="492" width="414" height="84"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="আজকের নামাজের ওয়াক্ত" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFe-Wn-aL2">
                                         <rect key="frame" x="124" y="0.0" width="166" height="20"/>
@@ -178,7 +178,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="OJi-nD-xhs">
                                                 <rect key="frame" x="13" y="0.0" width="384" height="62"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-lj-FSN">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZD-lj-FSN" userLabel="Fajor Namaz">
                                                         <rect key="frame" x="0.0" y="0.0" width="72" height="62"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YZH-ju-hQb">
@@ -277,7 +277,7 @@
                                                             <constraint firstItem="Evj-uT-OWm" firstAttribute="top" secondItem="Gtt-BQ-Kbd" secondAttribute="topMargin" id="tfD-Ci-cp4"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-S5-g25">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RDB-S5-g25" userLabel="Magrib Namaz">
                                                         <rect key="frame" x="234" y="0.0" width="72" height="62"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2nJ-uV-hky">
@@ -310,7 +310,7 @@
                                                             <constraint firstItem="2nJ-uV-hky" firstAttribute="top" secondItem="RDB-S5-g25" secondAttribute="topMargin" id="m9z-Yy-EI2"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTi-Ne-OMi">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTi-Ne-OMi" userLabel="Isha Namaz">
                                                         <rect key="frame" x="312" y="0.0" width="72" height="62"/>
                                                         <subviews>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oGr-IT-FXB">
@@ -373,7 +373,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oXD-7Z-Bqe">
-                                <rect key="frame" x="0.0" y="633" width="414" height="180"/>
+                                <rect key="frame" x="0.0" y="584" width="414" height="180"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M0P-a2-IiA" userLabel="IftarView">
                                         <rect key="frame" x="0.0" y="0.0" width="207" height="180"/>
@@ -519,10 +519,12 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="হোম" image="HomeIcon26" id="fHJ-Gd-h9o"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="297" y="99"/>
+            <point key="canvasLocation" x="295.6521739130435" y="98.4375"/>
         </scene>
         <!--সকল সূরাহ-->
         <scene sceneID="qbc-5X-KZO">
@@ -556,7 +558,7 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiM-qS-uac">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiM-qS-uac" userLabel="Name Lbl">
                                                     <rect key="frame" x="182.5" y="32" width="49.5" height="26"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="26" id="CMG-bA-N5R"/>
@@ -574,12 +576,15 @@
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLY-x6-eFG">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLY-x6-eFG" userLabel="Audio Play Button">
                                                     <rect key="frame" x="360" y="24" width="54" height="76"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="76" id="uxB-CL-CPQ"/>
                                                     </constraints>
                                                     <state key="normal" image="play"/>
+                                                    <connections>
+                                                        <action selector="audioPlayButton:" destination="Y6a-oJ-dwy" eventType="touchUpInside" id="fjd-bp-ZFD"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -599,6 +604,11 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="arabicNameLbl" destination="ISa-9R-JEY" id="2Bu-57-L9L"/>
+                                            <outlet property="audioPlayButton" destination="WLY-x6-eFG" id="eoL-A5-2kS"/>
+                                            <outlet property="nameLbl" destination="tiM-qS-uac" id="Nh8-GY-d7E"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -613,6 +623,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="সকল সূরাহ " id="oL7-aF-6kj"/>
+                    <connections>
+                        <outlet property="tableView" destination="5cb-2n-7Z0" id="MEE-hH-Dht"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AR4-M7-mAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -645,7 +658,7 @@
                                             <constraint firstAttribute="width" constant="292" id="XdU-rr-AbM"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlt-2i-u6T">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xlt-2i-u6T" userLabel="Tasbih Count Lbl">
                                         <rect key="frame" x="142.5" y="171.5" width="129" height="97"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="129" id="0lo-S1-sNg"/>
@@ -666,7 +679,7 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J3B-Nw-Nbx">
                                 <rect key="frame" x="141.5" y="658" width="131" height="53"/>
-                                <color key="backgroundColor" systemColor="systemGrayColor"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="53" id="P4R-pd-WO2"/>
                                 </constraints>
@@ -675,7 +688,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="newCountButton:" destination="Srh-F9-Z0F" eventType="touchUpInside" id="han-43-Hhe"/>
+                                    <action selector="newCountButton:" destination="Srh-F9-Z0F" eventType="touchUpInside" id="8cI-t4-qIz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -693,6 +706,9 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="তাসবিহ" image="HadithIcon26" id="HMT-iy-P7q"/>
+                    <connections>
+                        <outlet property="tasbihCountLbl" destination="Xlt-2i-u6T" id="hGz-Hg-PTL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5QF-Am-aNI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -933,8 +949,8 @@
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
-        <systemColor name="systemGrayColor">
-            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

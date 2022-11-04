@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D081BA8FD43DEDF78341E8D /* Pods_Life_of_Muslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C2B5F3B1BBC73F684543C /* Pods_Life_of_Muslim.framework */; };
 		521712B429028DFD003BE75C /* QuranAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521712B329028DFD003BE75C /* QuranAudioCell.swift */; };
 		52AD148628FD3FCF00B61D1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD148528FD3FCF00B61D1A /* AppDelegate.swift */; };
 		52AD148828FD3FCF00B61D1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD148728FD3FCF00B61D1A /* SceneDelegate.swift */; };
@@ -34,6 +35,9 @@
 		52AD14A328FD425E00B61D1A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		52AD14A528FD42BE00B61D1A /* QuranVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranVC.swift; sourceTree = "<group>"; };
 		52AD14A728FD42F300B61D1A /* TasbihVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihVC.swift; sourceTree = "<group>"; };
+		7F448523EBD74D3064DD20F8 /* Pods-Life of Muslim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life of Muslim.release.xcconfig"; path = "Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim.release.xcconfig"; sourceTree = "<group>"; };
+		B37C2B5F3B1BBC73F684543C /* Pods_Life_of_Muslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Life_of_Muslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBF3F026FCB809409977280B /* Pods-Life of Muslim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life of Muslim.debug.xcconfig"; path = "Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D081BA8FD43DEDF78341E8D /* Pods_Life_of_Muslim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E1B276C0381A61EBF0EDDFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B37C2B5F3B1BBC73F684543C /* Pods_Life_of_Muslim.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52AD147928FD3FCF00B61D1A = {
 			isa = PBXGroup;
 			children = (
 				52AD148428FD3FCF00B61D1A /* Life of Muslim */,
 				52AD148328FD3FCF00B61D1A /* Products */,
+				A4716E2B9846241F7465169E /* Pods */,
+				4E1B276C0381A61EBF0EDDFC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +137,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		A4716E2B9846241F7465169E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBF3F026FCB809409977280B /* Pods-Life of Muslim.debug.xcconfig */,
+				7F448523EBD74D3064DD20F8 /* Pods-Life of Muslim.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,15 +153,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52AD149628FD3FD100B61D1A /* Build configuration list for PBXNativeTarget "Life of Muslim" */;
 			buildPhases = (
+				612B659D3F88274471A8DC36 /* [CP] Check Pods Manifest.lock */,
 				52AD147E28FD3FCF00B61D1A /* Sources */,
 				52AD147F28FD3FCF00B61D1A /* Frameworks */,
 				52AD148028FD3FCF00B61D1A /* Resources */,
+				D6FCF257050F5622A07AD0EF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Life of Muslim";
+			packageProductDependencies = (
+			);
 			productName = "Life of Muslim";
 			productReference = 52AD148228FD3FCF00B61D1A /* Life of Muslim.app */;
 			productType = "com.apple.product-type.application";
@@ -166,6 +194,9 @@
 				Base,
 			);
 			mainGroup = 52AD147928FD3FCF00B61D1A;
+			packageReferences = (
+				52FA96222915126800873A79 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = 52AD148328FD3FCF00B61D1A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,6 +218,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		612B659D3F88274471A8DC36 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Life of Muslim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6FCF257050F5622A07AD0EF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		52AD147E28FD3FCF00B61D1A /* Sources */ = {
@@ -342,6 +415,7 @@
 		};
 		52AD149728FD3FD100B61D1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBF3F026FCB809409977280B /* Pods-Life of Muslim.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -370,6 +444,7 @@
 		};
 		52AD149828FD3FD100B61D1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F448523EBD74D3064DD20F8 /* Pods-Life of Muslim.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -418,6 +493,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52FA96222915126800873A79 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 52AD147A28FD3FCF00B61D1A /* Project object */;
 }

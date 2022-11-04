@@ -1,0 +1,20 @@
+PODS:
+  - Adhan (1.4.0)
+  - Alamofire (5.6.1)
+
+DEPENDENCIES:
+  - Adhan
+  - Alamofire
+
+SPEC REPOS:
+  trunk:
+    - Adhan
+    - Alamofire
+
+SPEC CHECKSUMS:
+  Adhan: a14251a1dc1aa9cb9097db183cefbbdd8b736ea2
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+
+PODFILE CHECKSUM: 4ea7f058baca152f6c2b5c650c2c56afbeab39aa
+
+COCOAPODS: 1.11.3
