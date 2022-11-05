@@ -15,8 +15,11 @@ class HomeVC: UIViewController, CLLocationManagerDelegate {
     
     let locationManager = CLLocationManager()
     let weatherData = WeatherData()
-    let WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather"
+    
+    let WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?appid=3f08f42cc5571fd65dfd661f5ba64f75&units=metric"
+    
     let APP_ID = "3f08f42cc5571fd65dfd661f5ba64f75"
+    
     @IBOutlet weak var cityLocationLbl: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
     
@@ -45,14 +48,13 @@ class HomeVC: UIViewController, CLLocationManagerDelegate {
     @IBOutlet weak var MagribLbl: UILabel!
     @IBOutlet weak var IshaLbl: UILabel!
     
-    //let quranVC = QuranTVC()
+    let formatter = DateFormatter()
+    let quranVC = QuranVC()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
-        
-        AdhanLibrary()
+//        AdhanLibrary()
         EngDate()
         ArabicDate()
         NamazView(demoView: FajorNamazView)
@@ -60,7 +62,7 @@ class HomeVC: UIViewController, CLLocationManagerDelegate {
         NamazView(demoView: AshorNamazView)
         NamazView(demoView: MagribNamazView)
         NamazView(demoView: IshaNamazView)
-        //quranVC.parseJSON()
+        quranVC.parseJSON()
         
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
@@ -79,25 +81,29 @@ class HomeVC: UIViewController, CLLocationManagerDelegate {
         let hijriDate = formetter.string(from: currentDate)
         ArabicDateLbl.text = hijriDate
     }
+    
     //MARK: Gegorian date
     func EngDate() {
-        let dateFormatterPrint = DateFormatter()
-        dateFormatterPrint.dateFormat = "EEE,d MMM, yyyy"
-        let exactlyCurrentTime: Date = Date()
-        print(dateFormatterPrint.string(from: exactlyCurrentTime))
-        EnglishDateLbl.text = "\(dateFormatterPrint.string(from: exactlyCurrentTime))"
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d MMMM, yyyy"
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.timeZone = TimeZone(abbreviation: "GMT+6")
+        EnglishDateLbl.text = "\(dateFormatter.string(from: date))"
     }
+    
     //MARK: 'Adhan' pod
     func AdhanLibrary() {
+        
         let cal = Calendar(identifier: Calendar.Identifier.gregorian)
         let date = cal.dateComponents([.year, .month, .day], from: Date())
         let coordinates = Coordinates(latitude: 23.777176, longitude: 90.399452)
         var params = CalculationMethod.moonsightingCommittee.params
         params.madhab = .hanafi
         
-        if let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params) {
+        if let prayers = PrayerTimes(coordinates: coordinates, date: date, calculationParameters: params)
+        {
             
-            let formatter = DateFormatter()
             formatter.timeStyle = .short
             formatter.timeZone = TimeZone(identifier: "Asia/Dhaka")!
             formatter.locale = Locale(identifier: "bn_IN")
@@ -137,13 +143,10 @@ class HomeVC: UIViewController, CLLocationManagerDelegate {
         demoView.layer.borderColor = UIColor.white.cgColor
         demoView.layer.cornerRadius = 8
     }
-    
-    
-    
 }
 
 //MARK: Location Manager setup
-extension HomeVC{
+extension HomeVC {
     //Write the didUpdateLocations method here:
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[locations.count - 1]
@@ -173,17 +176,28 @@ extension HomeVC{
     //MARK: - Networking with Alamofire
     //Write the getWeatherData method here:
     func getWeatherData(url : String, parameter : [String : String]) {
-        Alamofire.request(url, method: .get, parameters: parameter).responseJSON {
+        AF.request(url, method: .get, parameters: parameter).responseJSON {
             response in
-            if response.result.isSuccess{
+//            if response.result.isSuccess {
+//                print("Ntetworking Successful")
+//                let jsonData : JSON = JSON(response.result.value!)
+//                //print("JSON DATA:\(jsonData)")
+//                self.weatherData(data: jsonData)
+//                self.updateUIView()
+//            }
+//            else{
+//                print("Error Getting JSON response : \(response.result.error!)")
+//            }
+            
+            switch response.result {
+            case .success(_):
                 print("Ntetworking Successful")
-                let jsonData : JSON = JSON(response.result.value!)
-                //print("JSON DATA:\(jsonData)")
+                let jsonData : JSON = JSON(response.value!)
+                print("JSON DATA:\(jsonData)")
                 self.weatherData(data: jsonData)
                 self.updateUIView()
-            }
-            else{
-                print("Error Getting JSON response : \(response.result.error!)")
+            case .failure(_):
+                print("Error Getting JSON response : \(String(describing: response.error))")
             }
         }
     }

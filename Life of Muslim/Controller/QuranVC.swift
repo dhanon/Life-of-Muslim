@@ -41,8 +41,7 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
-        
-            self.parseJSON()
+        self.parseJSON()
     }
 
     //MARK: JSON parse
@@ -107,9 +106,7 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
             //MARK: Tableview datasource
             func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
-    
-    
+                
             }
     
     @IBAction func audioPlayButton(_ sender: UIButton) {

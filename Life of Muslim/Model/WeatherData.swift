@@ -12,8 +12,6 @@ class WeatherData {
     var CityName : String = ""
     var WeatherIcon : String = ""
     
-    
-    
     func updateWeatherIcon(condition: Int) -> String {
         
     switch (condition) {

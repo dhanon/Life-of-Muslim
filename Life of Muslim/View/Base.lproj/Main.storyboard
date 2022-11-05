@@ -94,7 +94,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7O-2C-Rj2" userLabel="সূর্যোদয় সময়">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T7O-2C-Rj2" userLabel="Sunrise Lbl">
                                                         <rect key="frame" x="66.5" y="0.0" width="43" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="fqe-iA-N2c"/>
@@ -117,7 +117,7 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-4m-HxE" userLabel="সূর্যাস্ত সময়">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Swh-4m-HxE" userLabel="Sunset Lbl">
                                                         <rect key="frame" x="65.5" y="0.0" width="44" height="20"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="20" id="hrp-8a-nWF"/>
@@ -160,7 +160,7 @@
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A70-TH-TSR" userLabel="NamazTimeView">
-                                <rect key="frame" x="0.0" y="492" width="414" height="84"/>
+                                <rect key="frame" x="0.0" y="500" width="414" height="84"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="আজকের নামাজের ওয়াক্ত" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFe-Wn-aL2">
                                         <rect key="frame" x="124" y="0.0" width="166" height="20"/>
@@ -193,7 +193,7 @@
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qD-kZ-gNt">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6qD-kZ-gNt" userLabel="Fajor Lbl">
                                                                         <rect key="frame" x="0.0" y="28" width="36" height="16"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="16" id="khk-J2-Gja"/>
@@ -292,7 +292,7 @@
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4j-uV-oWQ">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4j-uV-oWQ" userLabel="Magrib Lbl">
                                                                         <rect key="frame" x="0.0" y="28" width="49" height="16"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="16" id="E7n-4R-XOb"/>
@@ -325,7 +325,7 @@
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                         <nil key="highlightedColor"/>
                                                                     </label>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVl-xg-Y32">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVl-xg-Y32" userLabel="Isha Lbl">
                                                                         <rect key="frame" x="0.0" y="28" width="33" height="15.5"/>
                                                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="13"/>
                                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -401,7 +401,7 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-t8-IH2">
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezg-t8-IH2" userLabel="Iftar Time Lbl">
                                                                 <rect key="frame" x="51" y="62" width="58" height="27"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="27" id="g9J-An-Vlk"/>
@@ -509,7 +509,7 @@
                             <constraint firstAttribute="trailing" secondItem="ehz-Cd-2nm" secondAttribute="trailing" id="dL7-qd-CvG"/>
                             <constraint firstItem="GOM-FU-Lbe" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="238" id="fWE-B5-grh"/>
                             <constraint firstItem="A70-TH-TSR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gPw-cE-6Rl"/>
-                            <constraint firstItem="oXD-7Z-Bqe" firstAttribute="top" secondItem="A70-TH-TSR" secondAttribute="bottom" constant="8" id="i5h-gQ-LIH"/>
+                            <constraint firstItem="oXD-7Z-Bqe" firstAttribute="top" secondItem="A70-TH-TSR" secondAttribute="bottom" id="i5h-gQ-LIH"/>
                             <constraint firstItem="xYX-dp-5s4" firstAttribute="top" secondItem="ITy-7F-vQO" secondAttribute="top" id="nPz-5m-i7C"/>
                             <constraint firstItem="PaW-xi-Sni" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oio-RW-e8L"/>
                             <constraint firstItem="oXD-7Z-Bqe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="u5G-L0-B5K"/>
@@ -521,10 +521,32 @@
                     <tabBarItem key="tabBarItem" title="হোম" image="HomeIcon26" id="fHJ-Gd-h9o"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="ArabicDateLbl" destination="Rc8-eJ-Eno" id="jMN-mY-VXX"/>
+                        <outlet property="AshorLbl" destination="dF5-5E-Oil" id="WtP-43-fge"/>
+                        <outlet property="AshorNamazView" destination="Gtt-BQ-Kbd" id="etF-F7-HKY"/>
+                        <outlet property="EnglishDateLbl" destination="tqd-q3-Gtk" id="Y1G-zh-lGW"/>
+                        <outlet property="FajorLbl" destination="6qD-kZ-gNt" id="Vap-Aa-AUD"/>
+                        <outlet property="FajorNamazView" destination="bZD-lj-FSN" id="u8p-5o-Rjc"/>
+                        <outlet property="IftarTimeLbl" destination="Ezg-t8-IH2" id="xpB-Ix-Uve"/>
+                        <outlet property="IshaLbl" destination="jVl-xg-Y32" id="dQc-V5-3CV"/>
+                        <outlet property="IshaNamazView" destination="lTi-Ne-OMi" id="K2x-4c-7Gn"/>
+                        <outlet property="JohorLbl" destination="gSb-ts-R0Q" id="bAv-wQ-3fI"/>
+                        <outlet property="JohorNamazView" destination="sRn-TX-MCc" id="mu5-Sd-d5Z"/>
+                        <outlet property="MagribLbl" destination="o4j-uV-oWQ" id="CK2-cK-qBc"/>
+                        <outlet property="MagribNamazView" destination="RDB-S5-g25" id="Pjb-Ci-ksF"/>
+                        <outlet property="NextNamajLbl" destination="ict-cv-QuB" id="aPe-8D-IVd"/>
+                        <outlet property="NextNamazLbl" destination="ict-cv-QuB" id="r5E-yI-x6O"/>
+                        <outlet property="SahariTimeLbl" destination="jO0-eg-oGJ" id="5Se-xh-GUD"/>
+                        <outlet property="SunriseLbl" destination="T7O-2C-Rj2" id="ph1-q9-vca"/>
+                        <outlet property="SunsetLbl" destination="Swh-4m-HxE" id="N4I-gM-QBl"/>
+                        <outlet property="cityLocationLbl" destination="qCX-QP-H5J" id="74i-RZ-eZ3"/>
+                        <outlet property="temperatureLabel" destination="6RF-y3-678" id="T4d-Gl-8HK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="295.6521739130435" y="98.4375"/>
+            <point key="canvasLocation" x="295.38461538461536" y="98.104265402843595"/>
         </scene>
         <!--সকল সূরাহ-->
         <scene sceneID="qbc-5X-KZO">

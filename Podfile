@@ -8,6 +8,6 @@ target 'Life of Muslim' do
   # Pods for Life of Muslim
   pod 'Alamofire'
   pod 'Adhan'
-
+  pod 'SwiftyJSON'
 
 end

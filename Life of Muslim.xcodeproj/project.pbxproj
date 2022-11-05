@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D081BA8FD43DEDF78341E8D /* Pods_Life_of_Muslim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B37C2B5F3B1BBC73F684543C /* Pods_Life_of_Muslim.framework */; };
 		521712B429028DFD003BE75C /* QuranAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521712B329028DFD003BE75C /* QuranAudioCell.swift */; };
 		52AD148628FD3FCF00B61D1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD148528FD3FCF00B61D1A /* AppDelegate.swift */; };
 		52AD148828FD3FCF00B61D1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD148728FD3FCF00B61D1A /* SceneDelegate.swift */; };
@@ -36,7 +35,6 @@
 		52AD14A528FD42BE00B61D1A /* QuranVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranVC.swift; sourceTree = "<group>"; };
 		52AD14A728FD42F300B61D1A /* TasbihVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihVC.swift; sourceTree = "<group>"; };
 		7F448523EBD74D3064DD20F8 /* Pods-Life of Muslim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life of Muslim.release.xcconfig"; path = "Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim.release.xcconfig"; sourceTree = "<group>"; };
-		B37C2B5F3B1BBC73F684543C /* Pods_Life_of_Muslim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Life_of_Muslim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBF3F026FCB809409977280B /* Pods-Life of Muslim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life of Muslim.debug.xcconfig"; path = "Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -45,7 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D081BA8FD43DEDF78341E8D /* Pods_Life_of_Muslim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,7 +52,6 @@
 		4E1B276C0381A61EBF0EDDFC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B37C2B5F3B1BBC73F684543C /* Pods_Life_of_Muslim.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,7 +191,6 @@
 			);
 			mainGroup = 52AD147928FD3FCF00B61D1A;
 			packageReferences = (
-				52FA96222915126800873A79 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
 			);
 			productRefGroup = 52AD148328FD3FCF00B61D1A /* Products */;
 			projectDirPath = "";
@@ -493,17 +488,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		52FA96222915126800873A79 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 52AD147A28FD3FCF00B61D1A /* Project object */;
 }
