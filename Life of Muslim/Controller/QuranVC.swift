@@ -1,8 +1,8 @@
 //
-//  QuranVC.swift
+//  quranVC.swift
 //  Life of Muslim
 //
-//  Created by Anon's MacBook Pro on 17/10/22.
+//  Created by Anon's MacBook Pro on 7/11/22.
 //
 
 import UIKit
@@ -34,21 +34,22 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     var player: AVPlayer?
     
     
-
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tableView.delegate = self
-        self.tableView.dataSource = self
-        self.parseJSON()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        
+            self.parseJSON()
     }
 
-    //MARK: JSON parse
+    //MARK: - JSON parse
     func parseJSON()  {
         let url = URL(string: "https://api.alquran.cloud/v1/quran/ar.alafasy")
         
-        guard url != nil else{
+        guard url != nil else {
             print("URL Founr Nill")
             return
         }
@@ -64,7 +65,7 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //
 //                        print(self.audioUrl)
 //                    }
-                    DispatchQueue.main.async {
+                    DispatchQueue.main.async { [self] in
                         self.tableView.reloadData()
                         self.tableView.tableFooterView = UIView(frame: .zero)
                     }
@@ -73,7 +74,7 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 }
             }
             
-            //MARK: URL to Audio
+//MARK: - URL to Audio
             let urll = URL(string: "\(self.audioUrl)")
             self.playerItem = AVPlayerItem(url: urll!)
             self.player = AVPlayer(playerItem: self.playerItem!)
@@ -86,7 +87,7 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     
-    //MARK: Tableview delegate
+    //MARK: - Tableview delegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -104,13 +105,11 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-            //MARK: Tableview datasource
+    //MARK: - Tableview datasource
             func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-                
             }
     
     @IBAction func audioPlayButton(_ sender: UIButton) {
-       
         if player?.rate == 0{
             player?.play()
 
@@ -122,3 +121,4 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
 }
+

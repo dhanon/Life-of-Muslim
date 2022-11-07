@@ -4,11 +4,9 @@
 //
 //  Created by Anon's MacBook Pro on 21/10/22.
 //
-
 import UIKit
 
 class QuranAudioCell: UITableViewCell {
-
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var arabicNameLbl: UILabel!
     @IBOutlet weak var audioPlayButton: UIButton!
@@ -26,3 +24,4 @@ class QuranAudioCell: UITableViewCell {
     }
 
 }
+

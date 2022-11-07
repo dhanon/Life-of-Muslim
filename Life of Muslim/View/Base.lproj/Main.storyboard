@@ -605,7 +605,7 @@
                                                     </constraints>
                                                     <state key="normal" image="play"/>
                                                     <connections>
-                                                        <action selector="audioPlayButton:" destination="Y6a-oJ-dwy" eventType="touchUpInside" id="fjd-bp-ZFD"/>
+                                                        <action selector="audioPlayButton:" destination="Y6a-oJ-dwy" eventType="touchUpInside" id="gUC-ZE-DHQ"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -627,9 +627,8 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="arabicNameLbl" destination="ISa-9R-JEY" id="2Bu-57-L9L"/>
-                                            <outlet property="audioPlayButton" destination="WLY-x6-eFG" id="eoL-A5-2kS"/>
-                                            <outlet property="nameLbl" destination="tiM-qS-uac" id="Nh8-GY-d7E"/>
+                                            <outlet property="arabicNameLbl" destination="ISa-9R-JEY" id="03N-uw-uuN"/>
+                                            <outlet property="nameLbl" destination="tiM-qS-uac" id="oDr-nN-x53"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -646,7 +645,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="সকল সূরাহ " id="oL7-aF-6kj"/>
                     <connections>
-                        <outlet property="tableView" destination="5cb-2n-7Z0" id="MEE-hH-Dht"/>
+                        <outlet property="tableView" destination="5cb-2n-7Z0" id="kBi-Yu-h0v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AR4-M7-mAd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		521712B429028DFD003BE75C /* QuranAudioCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521712B329028DFD003BE75C /* QuranAudioCell.swift */; };
+		528881992918F4EF00AA13CF /* QuranVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528881982918F4EF00AA13CF /* QuranVC.swift */; };
 		52AD148628FD3FCF00B61D1A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD148528FD3FCF00B61D1A /* AppDelegate.swift */; };
 		52AD148828FD3FCF00B61D1A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD148728FD3FCF00B61D1A /* SceneDelegate.swift */; };
 		52AD148D28FD3FCF00B61D1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AD148B28FD3FCF00B61D1A /* Main.storyboard */; };
@@ -16,12 +17,12 @@
 		52AD149E28FD412900B61D1A /* Surah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD149D28FD412900B61D1A /* Surah.swift */; };
 		52AD14A028FD418700B61D1A /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD149F28FD418700B61D1A /* WeatherData.swift */; };
 		52AD14A428FD425E00B61D1A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD14A328FD425E00B61D1A /* HomeVC.swift */; };
-		52AD14A628FD42BE00B61D1A /* QuranVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD14A528FD42BE00B61D1A /* QuranVC.swift */; };
 		52AD14A828FD42F300B61D1A /* TasbihVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD14A728FD42F300B61D1A /* TasbihVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		521712B329028DFD003BE75C /* QuranAudioCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranAudioCell.swift; sourceTree = "<group>"; };
+		528881982918F4EF00AA13CF /* QuranVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranVC.swift; sourceTree = "<group>"; };
 		52AD148228FD3FCF00B61D1A /* Life of Muslim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Life of Muslim.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52AD148528FD3FCF00B61D1A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52AD148728FD3FCF00B61D1A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		52AD149D28FD412900B61D1A /* Surah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surah.swift; sourceTree = "<group>"; };
 		52AD149F28FD418700B61D1A /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		52AD14A328FD425E00B61D1A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		52AD14A528FD42BE00B61D1A /* QuranVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranVC.swift; sourceTree = "<group>"; };
 		52AD14A728FD42F300B61D1A /* TasbihVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihVC.swift; sourceTree = "<group>"; };
 		7F448523EBD74D3064DD20F8 /* Pods-Life of Muslim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life of Muslim.release.xcconfig"; path = "Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim.release.xcconfig"; sourceTree = "<group>"; };
 		CBF3F026FCB809409977280B /* Pods-Life of Muslim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life of Muslim.debug.xcconfig"; path = "Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				52AD14A328FD425E00B61D1A /* HomeVC.swift */,
-				52AD14A528FD42BE00B61D1A /* QuranVC.swift */,
 				52AD14A728FD42F300B61D1A /* TasbihVC.swift */,
+				528881982918F4EF00AA13CF /* QuranVC.swift */,
 				521712B329028DFD003BE75C /* QuranAudioCell.swift */,
 			);
 			path = Controller;
@@ -261,8 +261,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				528881992918F4EF00AA13CF /* QuranVC.swift in Sources */,
 				521712B429028DFD003BE75C /* QuranAudioCell.swift in Sources */,
-				52AD14A628FD42BE00B61D1A /* QuranVC.swift in Sources */,
 				52AD14A028FD418700B61D1A /* WeatherData.swift in Sources */,
 				52AD149E28FD412900B61D1A /* Surah.swift in Sources */,
 				52AD14A428FD425E00B61D1A /* HomeVC.swift in Sources */,

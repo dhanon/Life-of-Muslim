@@ -16,7 +16,7 @@ class HomeVC: UIViewController, CLLocationManagerDelegate {
     let locationManager = CLLocationManager()
     let weatherData = WeatherData()
     
-    let WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?appid=3f08f42cc5571fd65dfd661f5ba64f75&units=metric"
+    let WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=3f08f42cc5571fd65dfd661f5ba64f75"
     
     let APP_ID = "3f08f42cc5571fd65dfd661f5ba64f75"
     
@@ -176,7 +176,7 @@ extension HomeVC {
     //MARK: - Networking with Alamofire
     //Write the getWeatherData method here:
     func getWeatherData(url : String, parameter : [String : String]) {
-        AF.request(url, method: .get, parameters: parameter).responseJSON {
+AF.request(url, method: .get, parameters: parameter).responseJSON {
             response in
 //            if response.result.isSuccess {
 //                print("Ntetworking Successful")
@@ -188,7 +188,7 @@ extension HomeVC {
 //            else{
 //                print("Error Getting JSON response : \(response.result.error!)")
 //            }
-            
+
             switch response.result {
             case .success(_):
                 print("Ntetworking Successful")
@@ -201,7 +201,6 @@ extension HomeVC {
             }
         }
     }
-    
     //MARK: - JSON Parsing
     func weatherData(data : JSON) {
         let tempResult = data["main"]["temp"].doubleValue
