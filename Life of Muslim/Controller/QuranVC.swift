@@ -1,10 +1,3 @@
-//
-//  quranVC.swift
-//  Life of Muslim
-//
-//  Created by Anon's MacBook Pro on 7/11/22.
-//
-
 import UIKit
 import Foundation
 import AVFoundation
@@ -38,18 +31,17 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
             self.parseJSON()
     }
 
-    //MARK: - JSON parse
+    //MARK: JSON parse
     func parseJSON()  {
         let url = URL(string: "https://api.alquran.cloud/v1/quran/ar.alafasy")
         
-        guard url != nil else {
+        guard url != nil else{
             print("URL Founr Nill")
             return
         }
@@ -65,7 +57,7 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //
 //                        print(self.audioUrl)
 //                    }
-                    DispatchQueue.main.async { [self] in
+                    DispatchQueue.main.async {
                         self.tableView.reloadData()
                         self.tableView.tableFooterView = UIView(frame: .zero)
                     }
@@ -74,20 +66,20 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                 }
             }
             
-//MARK: - URL to Audio
-            let urll = URL(string: "\(self.audioUrl)")
-            self.playerItem = AVPlayerItem(url: urll!)
-            self.player = AVPlayer(playerItem: self.playerItem!)
-
-            let playerLayer = AVPlayerLayer(player: self.player!)
-            //playerLayer = CGRect(x: 0, y: 0, width: 10, height: 50)
-            self.view.layer.addSublayer(playerLayer)
+//            //MARK: URL to Audio
+//            let urll = URL(string: "\(self.audioUrl)")
+//            self.playerItem = AVPlayerItem(url: urll!)
+//            self.player = AVPlayer(playerItem: self.playerItem!)
+//
+//            let playerLayer = AVPlayerLayer(player: self.player!)
+//            //playerLayer = CGRect(x: 0, y: 0, width: 10, height: 50)
+//            self.view.layer.addSublayer(playerLayer)
         }.resume()
         
     }
     
     
-    //MARK: - Tableview delegate
+    //MARK: Tableview delegate
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
@@ -105,20 +97,22 @@ class QuranVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    //MARK: - Tableview datasource
-            func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-            }
+    //        //MARK: Tableview datasource
+    //        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    //
+    //
+    //
+    //        }
     
-    @IBAction func audioPlayButton(_ sender: UIButton) {
-        if player?.rate == 0{
-            player?.play()
-
-        }else{
-            player?.pause()
-        }
-    }
+//    @IBAction func audioPlayButton(_ sender: UIButton) {
+//        if player?.rate == 0{
+//            player?.play()
+//
+//        }else{
+//            player?.pause()
+//        }
+//    }
     
     
     
 }
-

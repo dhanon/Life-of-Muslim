@@ -15,7 +15,7 @@
 		52AD148F28FD3FD100B61D1A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52AD148E28FD3FD100B61D1A /* Assets.xcassets */; };
 		52AD149228FD3FD100B61D1A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52AD149028FD3FD100B61D1A /* LaunchScreen.storyboard */; };
 		52AD149E28FD412900B61D1A /* Surah.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD149D28FD412900B61D1A /* Surah.swift */; };
-		52AD14A028FD418700B61D1A /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD149F28FD418700B61D1A /* WeatherData.swift */; };
+		52AD14A028FD418700B61D1A /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD149F28FD418700B61D1A /* WeatherDataModel.swift */; };
 		52AD14A428FD425E00B61D1A /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD14A328FD425E00B61D1A /* HomeVC.swift */; };
 		52AD14A828FD42F300B61D1A /* TasbihVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52AD14A728FD42F300B61D1A /* TasbihVC.swift */; };
 /* End PBXBuildFile section */
@@ -31,7 +31,7 @@
 		52AD149128FD3FD100B61D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52AD149328FD3FD100B61D1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52AD149D28FD412900B61D1A /* Surah.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Surah.swift; sourceTree = "<group>"; };
-		52AD149F28FD418700B61D1A /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		52AD149F28FD418700B61D1A /* WeatherDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		52AD14A328FD425E00B61D1A /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		52AD14A728FD42F300B61D1A /* TasbihVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasbihVC.swift; sourceTree = "<group>"; };
 		7F448523EBD74D3064DD20F8 /* Pods-Life of Muslim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Life of Muslim.release.xcconfig"; path = "Target Support Files/Pods-Life of Muslim/Pods-Life of Muslim.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				52AD14A328FD425E00B61D1A /* HomeVC.swift */,
-				52AD14A728FD42F300B61D1A /* TasbihVC.swift */,
 				528881982918F4EF00AA13CF /* QuranVC.swift */,
+				52AD14A728FD42F300B61D1A /* TasbihVC.swift */,
 				521712B329028DFD003BE75C /* QuranAudioCell.swift */,
 			);
 			path = Controller;
@@ -120,7 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				52AD149D28FD412900B61D1A /* Surah.swift */,
-				52AD149F28FD418700B61D1A /* WeatherData.swift */,
+				52AD149F28FD418700B61D1A /* WeatherDataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -263,7 +263,7 @@
 			files = (
 				528881992918F4EF00AA13CF /* QuranVC.swift in Sources */,
 				521712B429028DFD003BE75C /* QuranAudioCell.swift in Sources */,
-				52AD14A028FD418700B61D1A /* WeatherData.swift in Sources */,
+				52AD14A028FD418700B61D1A /* WeatherDataModel.swift in Sources */,
 				52AD149E28FD412900B61D1A /* Surah.swift in Sources */,
 				52AD14A428FD425E00B61D1A /* HomeVC.swift in Sources */,
 				52AD148628FD3FCF00B61D1A /* AppDelegate.swift in Sources */,

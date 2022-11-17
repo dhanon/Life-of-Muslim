@@ -4,7 +4,7 @@
 
 import UIKit
 
-class WeatherData {
+class WeatherDataModel {
 
 
     var Temperature : Int = 0
